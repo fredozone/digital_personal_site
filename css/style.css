@@ -1,0 +1,533 @@
+@font-face {
+    font-family: "Ubuntu Mono";
+    src: url("../fonts/Ubuntu Mono Bold Nerd Font Complete Mono.ttf");
+}
+
+
+:root{
+    --dark-color: black;
+    --svg-color-menu: black;
+    --Pale-Turquoise: #C0DEFF;
+    --Snow: #fafafa;
+    --background-color-pages: #f2f6ff;
+    --skill-color-name: #5c6170;
+    --gray-shadow: #ccc;
+}
+
+body{
+    font-family: "Ubuntu Mono", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: var(--Snow);
+    background-repeat: repeat;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.background-color-index{
+    background: linear-gradient(110deg, var(--Snow) 54%, var(--Pale-Turquoise) 50%);
+}
+
+a{
+    text-decoration: none;
+    color:var(--dark-color);
+}
+
+/*************************************************
+                        MENU
+*************************************************/
+
+/* center my menu on the right center of my screen */
+.menu{
+    position: fixed;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.active-menu, .menu-style{
+    border-style: solid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-width: 1px;
+    padding: 15px;
+    margin: 5px;
+    background-color:var(--Snow);
+}
+
+/* working with active menu */
+.active-menu {
+    background-color: var(--dark-color);
+
+}
+
+.active-menu:after{
+    content: attr(data-original-title);
+    color: var(--Snow);
+}
+
+.active-menu > svg{
+    display: none;
+}
+
+/* menu hover styles */
+.menu-style:hover{
+    background-color: var(--dark-color);
+    color: var(--Pale-Turquoise);
+    transition: ease-in-out;
+    transition-delay: 0.2s;
+    width: 40px;
+    height: 40px;
+}
+
+svg{
+    color: var(--svg-color-menu);
+    font-size: 1.5rem;
+}
+
+/* desplay none my svg  */
+a > .menu-style:hover > svg{
+    display: none;
+    transition: ease-in-out;
+    transition-delay: 0.2s; 
+}
+
+/* showing the attribute that the tag a have with the name data-original-tilte */
+.menu-style:hover:after{
+    transition: ease-in-out;
+    transition-delay: 0.2s; 
+    content: attr(data-original-title);
+    color: var(--Snow);
+}
+
+
+/*****************************************************
+                    INDEX
+*****************************************************/
+
+.section{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.aling-div-left{
+    display: inline-block;
+}
+
+.img-index{
+    width: 70%;
+    /* border-style: solid; */
+    /* border-color: var(--Pale-Turquoise); */
+    /* padding: 10px; */
+    /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
+    filter: drop-shadow(5px 5px 5px var(--Pale-Turquoise));
+    /* box-shadow: 10px 10px 10px var(--gray-shadow); */
+    /*-moz-box-shadow: 10px 10px 10px var(--gray-shadow);*/
+    /* -webkit-box-shadow: 10px 10px 10px var(--gray-shadow); */
+    /*-khtml-box-shadow: 10px 10px 10px var(--gray-shadow);*/
+}
+
+.aling-content-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* margin bottom cero */
+.margin-b-cero{
+    margin-bottom: 0px;
+}
+
+/* margin bottom cero */
+.margin-t-cero{
+    margin-top: 0px;
+}
+
+h1{
+    font-size: 3.2rem;
+}
+
+
+/******************************************************************
+                            MAIN TITLES PAGES
+******************************************************************/
+.background-color-pages{
+    background-color: var(--background-color-pages);
+    /* background: linear-gradient(180deg, var(--Pale-Turquoise) 60%, var(--Snow) 60%);
+    background-repeat: repeat-x; */
+}
+
+/* change my h1 without change the tag h1 */
+.main-title > h1{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 4.3rem;
+}
+
+/* making my second title behind my main title */
+.bg-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all .4s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 6.3rem;
+    color: var(--Pale-Turquoise);
+}
+
+/*****************************************************************
+                        PAGES STYLES
+*****************************************************************/
+
+.about-width-text{
+    width: 50%;
+}
+
+.img-left-margin{
+    margin-left: 20px;
+}
+
+.img-right-margin{
+    margin-right: 20px;
+}
+
+.img-style-page{
+    border-style: solid;
+    padding: 5px;
+    border-color: var(--Pale-Turquoise);
+    box-shadow: 10px 10px 10px var(--grey);
+      -moz-box-shadow: 10px 10px 10px var(--gray-shadow);
+      -webkit-box-shadow: 10px 10px 10px var(--gray-shadow);
+      -khtml-box-shadow: 10px 10px 10px var(--gray-shadow);
+}
+
+
+
+/*********************************************************
+                    EXPERINCE
+*********************************************************/
+
+.position-right-card{
+    right: 16px;
+}
+
+.position-left-card{
+    left: 16px;
+}
+
+.card{
+    width: 40%;
+    padding: 20px;
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+}
+
+/* float text right and left  */
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+/* text align right and left  */
+.text-align-right{
+    text-align: right;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+.card-name{
+    position: absolute;
+    top: 40px;
+}
+
+.description{
+    width: 532px;
+    height: 130px;
+    position: absolute;
+    top: 220px;
+    transform: translateY(-50%);
+    background-color: var(--Pale-Turquoise);
+    padding-right: 10px;
+    padding-left: 10px;
+    overflow: auto;
+}
+
+/* skill position and color */
+.skills{
+    position: absolute;
+    top: 278px;
+    color: #5c6170;
+}
+
+.external-link{
+    position: absolute;
+    top: 315px;
+}
+
+.external-link > a{
+    text-decoration: none;
+}
+
+.external-link:hover > a > svg{
+    color: var(--Pale-Turquoise);
+}
+
+.img-card{
+    z-index: 0;
+    border-style: solid;
+    color: var(--background-color-pages);
+}
+
+.img-card:hover{
+    color: var(--Pale-Turquoise);
+    transition: ease-in-out;
+    transition-delay: 0.2s; 
+}
+.img-experience{
+    width: 300px;
+    height: 411px;
+}
+
+.img-right{
+    position: relative;
+}
+
+.img-left-content{
+    position: relative;
+    left: 450px;
+}
+
+/**********************************************************
+                    FOOTER 
+**********************************************************/
+
+footer{
+    background-color: var(--Pale-Turquoise);
+    margin-top: 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.svg-footer{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.svg-footer:hover{
+    color: #19A7CE;
+}
+
+/*****************************************************
+                    LAPTOP
+*****************************************************/
+
+/* laptop view  */
+@media (min-width: 1040px) and (max-width: 1536px) {
+    .laptop-view{
+        width: 40%;
+    }
+
+    .background-color-index {
+        background: linear-gradient(110deg, var(--Snow) 50%, var(--Pale-Turquoise) 50%);
+    }
+
+    .img-left-content{
+        left: 270px;
+    }
+
+    .description{
+        width: 425px;
+        height: 130px;
+        position: absolute;
+        top: 220px;
+        transform: translateY(-50%);
+        background-color: var(--Pale-Turquoise);
+        padding-right: 10px;
+        padding-left: 10px;
+        overflow: auto;
+    }
+}
+
+
+/**********************************************************
+                    PHONE VIEW
+**********************************************************/
+@media (min-width: 320px) and (max-width: 767px) {
+
+    /* index view */
+
+    .content-display-none{
+        display: none;
+    }
+
+    /* about view */
+
+    .img-right-margin{
+        margin-right: 0px;
+    }
+
+    .img-left-margin{
+        margin-left: 0px;
+    }
+
+    .phone-view{
+        display: block;
+    }
+
+    .about-width-text{
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    /* move the content of free time section the pic is going to show the last child  */
+    .move-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    [id$='-row'] {
+        order: 2;
+    }
+    #fisrt-child-img {
+        order: 3;
+    }
+
+    #second-child-text {
+        order: 1;
+    }
+
+    /* work experience view */
+
+    .main-title > h1 {
+        font-size: 3.3rem;
+    }
+
+    .bg-text {
+        font-size: 4.3rem;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .img-card{
+        width: 100%;
+        height: 100%;
+        filter: blur(7px);
+    }
+
+    .description{
+        width: 334px;
+    }
+
+    .skills{
+        width: 334px;
+        top:285px;
+        background-color: var(--Snow);
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .external-link{
+        top:340px;
+    }
+
+    .img-left-content {
+        position: 0px;
+        left:0px;
+    }
+}
+
+/********************************************************
+                        TABLET VIEW 
+********************************************************/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+
+    /* about view */
+
+    .img-right-margin{
+        margin-right: 0px;
+    }
+
+    .img-left-margin{
+        margin-left: 0px;
+    }
+    
+    .phone-view{
+        display: block;
+    }
+
+    .about-width-text{
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    /* move the content of free time section the pic is going to show the last child  */
+    .move-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+    [id$='-row'] {
+        order: 2;
+    }
+    #fisrt-child-img {
+        order: 3;
+    }
+
+    #second-child-text {
+        order: 1;
+    }
+
+    /* experience work view */
+    .card{
+        width: 70%;
+    }
+
+    .img-card{
+        width: 100%;
+        height: 100%;
+        filter: blur(4px);
+    }
+
+    .description{
+        width: 334px;
+    }
+
+    .skills{
+        width: 334px;
+        top:285px;
+        background-color: var(--Snow);
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .external-link{
+        top:340px;
+    }
+
+    .img-left-content {
+        position: 0px;
+        left:0px;
+    }
+
+
+}
