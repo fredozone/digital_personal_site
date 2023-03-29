@@ -437,7 +437,8 @@ footer{
     }
 
     .card-name{
-        backdrop-filter: blur(8px);
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
         padding-left: 10px;
         padding-right: 10px;
     }
