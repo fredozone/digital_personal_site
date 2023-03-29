@@ -436,6 +436,12 @@ footer{
         filter: blur(7px);
     }
 
+    .card-name{
+        backdrop-filter: blur(8px);
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
     .description{
         width: 334px;
     }
