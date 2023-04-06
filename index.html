@@ -10,9 +10,9 @@
     <link rel="icon" sizes="192x192" href="images/vault.jpg">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="background-color-index">
-    <main>
-        <!-- menu Start-->
+<body class="background-color-index" id="index">
+    <!-- menu Start-->
+    <header>
         <section class="menu">
             <a href="index.html">
                 <div class="menu-style active-menu aling-content-center" data-original-title="Home">
@@ -29,23 +29,60 @@
                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M352 144v-39.6C352 82 334 64 311.6 64H200.4C178 64 160 82 160 104.4V144H48v263.6C48 430 66 448 88.4 448h335.2c22.4 0 40.4-18 40.4-40.4V144H352zm-40 0H200v-40h112v40z"></path></svg>                
                 </div>
             </a>
+            <a href="contact.html" >
+                <div class="menu-style aling-content-center" data-original-title="Contact">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>                
+                </div>
+            </a>
         </section>
-        <!-- menu end -->
+    </header>
+    <!-- menu end -->
+    <main>
         <!-- section where i show my picture and my name -->
-        <section class="section aling-content-center">
-            <div class="aling-content-center laptop-view content-display-none">
-                <img src="images/me4-removebg.png" alt="pic of myselft" class="img-index">
-            </div>
-            <div class="aling-div-left">
-                <h2 class="aling-div-left margin-b-cero">Welcome,</h2><p class="aling-div-left margin-b-cero">My name is</p>
-                <h1 class="margin-t-cero  margin-b-cero">Alfredo A Arguinzones</h1>
-                <h2 class="margin-t-cero">Full Stack Developer</h2>
-            </div>
-        </section>
-        <!-- end of me section -->
+<!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+    <!--Content ends-->
+    <section class="section aling-content-center" id="index-page">
+        <div class="aling-content-center laptop-view content-display-none">
+            <img src="images/me4-removebg.png" alt="pic of myselft" class="img-index">
+        </div>
+        <div class="aling-div-left">
+            <h2 class="aling-div-left margin-b-cero">Welcome,</h2><p class="aling-div-left margin-b-cero">My name is</p>
+            <h1 class="margin-t-cero  margin-b-cero">Alfredo A Arguinzones</h1>
+            <h2 class="margin-t-cero">Full Stack Developer</h2>
+        </div>
+    </section>
+    <!-- end of me section -->
+    </div>
+    
+    <!--Waves Container-->
+    <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+    
+    </div>
+    <!--Header ends-->
+    
     </main>
     <!-- javascript files -->
     <!-- external JS file -->
-<script src="js/javascript.js"></script>
+    <script src="js/javascript.js"></script>
 </body>
 </html>
