@@ -1,17 +1,20 @@
 @font-face {
     font-family: "Ubuntu Mono";
-    src: url("../fonts/Ubuntu Mono Bold Nerd Font Complete Mono.ttf");
+    src: url("../fonts/Arimo Regular Nerd Font Complete.ttf");
 }
 
 
 :root{
     --dark-color: black;
     --svg-color-menu: black;
-    --Pale-Turquoise: #C0DEFF;
+    --Pale-Turquoise: #91c8ff;
     --Snow: #fafafa;
     --background-color-pages: #f2f6ff;
     --skill-color-name: #5c6170;
     --gray-shadow: #ccc;
+    --cyan-blue: #86b7fe;
+    --Cerulean:#2268ee;
+    --blue-green:#19A7CE;
 }
 
 body{
@@ -23,6 +26,7 @@ body{
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+    font-size: 14pt;
 }
 
 .background-color-index{
@@ -57,6 +61,7 @@ a{
     border-width: 1px;
     padding: 15px;
     margin: 5px;
+    font-size: 12pt;
     background-color:var(--Snow);
 }
 
@@ -118,7 +123,7 @@ a > .menu-style:hover > svg{
     top: 0;
 }
 .aling-div-left{
-    display: inline-block;
+    display: inline-block; 
 }
 
 .img-index{
@@ -154,6 +159,84 @@ h1{
     font-size: 3.2rem;
 }
 
+/******************************************************************
+                            WAVES ANIMATION
+******************************************************************/
+
+body {
+    margin:0;
+  }
+  
+  .header {
+    background: rgb(192,222,255);
+background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 100%);
+  }
+  
+  .inner-header {
+    height:85vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: white;
+  }
+  
+  /* Animation */
+  
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*Shrinking for mobile*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
 
 /******************************************************************
                             MAIN TITLES PAGES
@@ -182,6 +265,7 @@ h1{
     font-weight: 800;
     font-size: 6.3rem;
     color: var(--Pale-Turquoise);
+    width: max-content;
 }
 
 /*****************************************************************
@@ -316,6 +400,139 @@ h1{
 }
 
 /**********************************************************
+                    CONTACT 
+**********************************************************/
+
+#contact{
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.aling-content-center-row{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.sub-tilte{
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.form{
+    display: grid; 
+    padding-right: 50px;
+    padding-top: 25px;
+    width: 400px;
+    justify-content: center; 
+}
+
+.personal-info{
+    padding-left: 50px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
+}
+
+hr{
+    width: 300px;
+}
+
+.label-form, .input-form, .textarea-form{
+    width: 250px;
+    display: grid;
+}
+
+.label-form{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.submit-form{
+    margin-top: 10px;
+    background-color: var(--Pale-Turquoise);
+    border-radius: 5px;
+    padding: 10px;
+    width: 255px;
+}
+
+input, textarea{
+    background: white;
+    border: 1px solid var(--gray-shadow);
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 8px 0;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+input[type="text"],input[type="email"], .submit-form-contact{
+    width: 300px;
+}
+
+.textarea-form {
+    width: 300px;
+    height: 250px;
+}
+
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
+    border: 1px solid var(--cyan-blue);
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+}
+
+.submit-form-contact{
+    height: 41px;
+    border-radius: 5px;
+    font-size: 14pt;
+    cursor: pointer;
+    color: var(--dark-color);
+    border: 1px solid var(--Pale-Turquoise);
+    background-color: var(--Pale-Turquoise);
+}
+
+.submit-form-contact:hover{
+    color: var(--Snow);
+    border-color: var(--cyan-blue);
+    background-color: var(--Cerulean);
+    transition: ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.info-data-contact{
+    display: flex;
+    align-items: center;
+}
+.location-icon{
+    cursor: default !important;
+}
+.info-data-contact:hover > a, .info-data-contact:hover svg{
+    cursor: pointer;
+    color: var(--Cerulean);
+    transition: ease-in-out;
+    transition-delay: 0.2s;
+}
+.icon{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linkedin:hover,.github:hover{
+    color: var(--Cerulean);
+    transition: ease-in-out;
+    transition-delay: 0.2s;
+}
+
+.aling-flex-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************************************
                     FOOTER 
 **********************************************************/
 
@@ -334,7 +551,7 @@ footer{
 }
 
 .svg-footer:hover{
-    color: #19A7CE;
+    color: var(--blue-gree);
 }
 
 /*****************************************************
@@ -373,11 +590,17 @@ footer{
                     PHONE VIEW
 **********************************************************/
 @media (min-width: 320px) and (max-width: 767px) {
-
+    body{
+        font-size: 12pt !important;
+    }
     /* index view */
 
     .content-display-none{
         display: none;
+    }
+
+    .inner-header{
+        height: 94vh;
     }
 
     /* about view */
@@ -419,11 +642,11 @@ footer{
     /* work experience view */
 
     .main-title > h1 {
-        font-size: 3.3rem;
+        font-size: 2.5rem;
     }
 
     .bg-text {
-        font-size: 4.3rem;
+        font-size: 3.2rem;
     }
 
     .card{
@@ -433,11 +656,10 @@ footer{
     .img-card{
         width: 100%;
         height: 100%;
-        filter: blur(7px);
+        filter: opacity(30%);
     }
 
     .card-name{
-        background: rgba(255, 255, 255, 0.2);
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -455,12 +677,41 @@ footer{
     }
 
     .external-link{
-        top:340px;
+        top:357px;
     }
 
     .img-left-content {
         position: 0px;
         left:0px;
+    }
+
+    /* contact */
+
+    .margin-width-text{
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .aling-flex-content{
+        display: grid;
+    }
+
+    .form{
+        padding-right: 0; 
+        width: 100%; 
+    }
+
+    .personal-info{
+        padding-left: 0; 
+        width: 100%; 
+    }
+
+    #form-contact{
+        order:2;
+    }
+
+    #personal-info-social{
+        order: 1;
     }
 }
 
@@ -470,6 +721,27 @@ footer{
 
 @media (min-width: 768px) and (max-width: 1040px) {
 
+    body{
+        font-size: 16pt !important;
+    }
+
+    .inner-header{
+        height: 96vh;
+    }
+
+    /* menu */
+
+    .aling-content-center{
+        font-size: 14pt;
+    }
+
+    .main-title > h1 {
+        font-size: 3.5rem;
+    }
+
+    .bg-text {
+        font-size: 4.4rem;
+    }
     /* about view */
 
     .img-right-margin{
@@ -514,7 +786,7 @@ footer{
     .img-card{
         width: 100%;
         height: 100%;
-        filter: blur(4px);
+        filter: opacity(30%);
     }
 
     .description{
@@ -530,7 +802,7 @@ footer{
     }
 
     .external-link{
-        top:340px;
+        top:366px;
     }
 
     .img-left-content {
@@ -538,5 +810,31 @@ footer{
         left:0px;
     }
 
+    /* contact  */
+    .margin-width-text{
+        width: 95%;
+        margin-left: 10px;
+    }
 
+    .aling-flex-content{
+        display: grid;
+    }
+
+    .form{
+        padding-right: 0; 
+        width: 100%; 
+    }
+
+    .personal-info{
+        padding-left: 0; 
+        width: 100%; 
+    }
+
+    #form-contact{
+        order:2;
+    }
+
+    #personal-info-social{
+        order: 1;
+    }
 }
