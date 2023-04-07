@@ -3,7 +3,6 @@
     src: url("../fonts/Arimo Regular Nerd Font Complete.ttf");
 }
 
-
 :root{
     --dark-color: black;
     --svg-color-menu: black;
@@ -43,12 +42,16 @@ a{
 *************************************************/
 
 /* center my menu on the right center of my screen */
+.display-manu{
+    display: none;
+}
+
 .menu{
     position: fixed;
     top: 50%;
     right: 3%;
     transform: translateY(-50%);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     z-index: 10;
 }
@@ -116,27 +119,27 @@ a > .menu-style:hover > svg{
 *****************************************************/
 
 .section{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     position: relative;
     left: 0;
     top: 0;
 }
+
+.style-name{
+    color: var(--Snow);
+}
+
+.style-title{
+    font-size: 20px;
+}
+
 .aling-div-left{
     display: inline-block; 
 }
 
 .img-index{
-    width: 70%;
-    /* border-style: solid; */
-    /* border-color: var(--Pale-Turquoise); */
-    /* padding: 10px; */
-    /* -webkit-filter: drop-shadow(5px 5px 5px #222); */
-    filter: drop-shadow(5px 5px 5px var(--Pale-Turquoise));
-    /* box-shadow: 10px 10px 10px var(--gray-shadow); */
-    /*-moz-box-shadow: 10px 10px 10px var(--gray-shadow);*/
-    /* -webkit-box-shadow: 10px 10px 10px var(--gray-shadow); */
-    /*-khtml-box-shadow: 10px 10px 10px var(--gray-shadow);*/
+    width: 100%;
 }
 
 .aling-content-center{
@@ -147,7 +150,7 @@ a > .menu-style:hover > svg{
 
 /* margin bottom cero */
 .margin-b-cero{
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 }
 
 /* margin bottom cero */
@@ -173,7 +176,7 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
   }
   
   .inner-header {
-    height:85vh;
+    /* height:85vh; */
     width:100%;
     margin: 0;
     padding: 0;
@@ -190,7 +193,7 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
   
   .content {
     position:relative;
-    height:20vh;
+    /* height:20vh; */
     text-align:center;
     background-color: white;
   }
@@ -363,7 +366,7 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
 
 .external-link{
     position: absolute;
-    top: 329px;
+    top: 338px;
 }
 
 .external-link > a{
@@ -403,7 +406,7 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
                     CONTACT 
 **********************************************************/
 
-#contact{
+#contact, #portfolio, #about{
     padding-top: 25px;
     padding-bottom: 50px;
 }
@@ -560,8 +563,13 @@ footer{
 
 /* laptop view  */
 @media (min-width: 1040px) and (max-width: 1536px) {
-    .laptop-view{
-        width: 40%;
+
+    .img-index{
+        width: 80%;
+    }
+
+    .card{
+        width: 50%;
     }
 
     .background-color-index {
@@ -569,11 +577,11 @@ footer{
     }
 
     .img-left-content{
-        left: 270px;
+        left: 423px;
     }
 
     .description{
-        width: 362px;
+        width: 450px;
         height: 139px;
         position: absolute;
         top: 220px;
@@ -582,6 +590,10 @@ footer{
         padding-right: 10px;
         padding-left: 10px;
         overflow: auto;
+    }
+
+    .skills{
+        width: 450px;
     }
 }
 
@@ -593,6 +605,59 @@ footer{
     body{
         font-size: 12pt !important;
     }
+    
+
+    /* menu */
+    .display-manu{
+        display: block;
+    }
+
+    .style-name{
+        color: var(--Snow);
+        font-size: 32px !important;
+    }
+
+    .style-title{
+        font-size: 19px;
+    }
+
+    #contact, #portfolio, #about {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .menu-phone-view{
+        position: fixed;
+    }
+ 
+    .phone-tablet-view-none{
+        display: none;
+    } 
+
+    .menu-alignt-right{
+        display: flex;
+        justify-content: flex-end;
+        right: 15px;
+        top: 6px;
+        position: absolute;
+    }
+
+    .menu-action{
+        border-style: solid;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border-width: 1px;
+        padding: 15px;
+        margin: 5px;
+        font-size: 12pt;
+        background-color: var(--Snow);
+        cursor: pointer;
+        user-select: none;
+        z-index: 99;
+        position: fixed;
+    }
+
     /* index view */
 
     .content-display-none{
@@ -730,6 +795,47 @@ footer{
     }
 
     /* menu */
+        /* menu */
+    .display-manu{
+        display: block;
+    }
+    
+    #contact, #portfolio, #about {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    
+    .menu-phone-view{
+        position: fixed;
+    }
+     
+    .phone-tablet-view-none{
+        display: none;
+    } 
+    
+    .menu-alignt-right{
+        display: flex;
+        justify-content: flex-end;
+        right: 15px;
+        top: 6px;
+        position: absolute;
+    }
+    
+    .menu-action{
+        border-style: solid;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border-width: 1px;
+        padding: 15px;
+        margin: 5px;
+        font-size: 12pt;
+        background-color: var(--Snow);
+        cursor: pointer;
+        user-select: none;
+        z-index: 99;
+        position: fixed;
+    }
 
     .aling-content-center{
         font-size: 14pt;
