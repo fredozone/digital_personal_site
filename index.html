@@ -11,41 +11,88 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="background-color-index">
-    <main>
-        <!-- menu Start-->
-        <section class="menu">
-            <a href="index.html">
-                <div class="menu-style active-menu aling-content-center" data-original-title="Home">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg>              
-                </div>
-            </a>
-            <a href="about.html">
-                <div class="menu-style aling-content-center" data-original-title="About">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-                </div>
-            </a>
-            <a href="portfolio.html" >
-                <div class="menu-style aling-content-center" data-original-title="Work">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M352 144v-39.6C352 82 334 64 311.6 64H200.4C178 64 160 82 160 104.4V144H48v263.6C48 430 66 448 88.4 448h335.2c22.4 0 40.4-18 40.4-40.4V144H352zm-40 0H200v-40h112v40z"></path></svg>                
-                </div>
-            </a>
-        </section>
-        <!-- menu end -->
-        <!-- section where i show my picture and my name -->
-        <section class="section aling-content-center">
+<!-- menu Start-->
+<header>
+    <!-- show and hide menu -->
+    <div class="menu-alignt-right display-manu">
+        <button class="menu-action" onclick="menuAction()">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"></path></svg>
+        </button>
+    </div>
+    <!-- menu start -->
+    <section class="menu" id="phone-view">
+        <a href="index.html">
+            <div class="menu-style active-menu aling-content-center" data-original-title="Home">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M946.5 505L534.6 93.4a31.93 31.93 0 0 0-45.2 0L77.5 505c-12 12-18.8 28.3-18.8 45.3 0 35.3 28.7 64 64 64h43.4V908c0 17.7 14.3 32 32 32H448V716h112v224h265.9c17.7 0 32-14.3 32-32V614.3h43.4c17 0 33.3-6.7 45.3-18.8 24.9-25 24.9-65.5-.1-90.5z"></path></svg>              
+            </div>
+        </a>
+        <a href="about.html">
+            <div class="menu-style aling-content-center" data-original-title="About">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
+            </div>
+        </a>
+        <a href="portfolio.html" >
+            <div class="menu-style aling-content-center" data-original-title="Work">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M352 144v-39.6C352 82 334 64 311.6 64H200.4C178 64 160 82 160 104.4V144H48v263.6C48 430 66 448 88.4 448h335.2c22.4 0 40.4-18 40.4-40.4V144H352zm-40 0H200v-40h112v40z"></path></svg>                
+            </div>
+        </a>
+        <a href="contact.html" >
+            <div class="menu-style aling-content-center" data-original-title="Contact">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>                
+            </div>
+        </a>
+    </section>
+</header>
+<!-- menu end -->
+<main>
+<!-- section where i show my picture and my name -->
+<!--Hey! This is the original version
+of Simple CSS Waves-->
+
+<div class="header" >
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <!--Content ends-->
+        <section class="section aling-content-center" id="index">
             <div class="aling-content-center laptop-view content-display-none">
                 <img src="images/me4-removebg.png" alt="pic of myselft" class="img-index">
             </div>
             <div class="aling-div-left">
-                <h2 class="aling-div-left margin-b-cero">Welcome,</h2><p class="aling-div-left margin-b-cero">My name is</p>
-                <h1 class="margin-t-cero  margin-b-cero">Alfredo A Arguinzones</h1>
-                <h2 class="margin-t-cero">Full Stack Developer</h2>
+                <h2 class="aling-div-left margin-b-cero">Welcome,</h2><p class="aling-div-left margin-b-cero">&nbsp;My name is</p>
+                <h1 class="margin-t-cero  margin-b-cero style-name">Alfredo A Arguinzones</h1>
+                <h2 class="margin-t-cero style-title">Full Stack Developer</h2>
             </div>
         </section>
         <!-- end of me section -->
+    </div>
+    
+    <!--Waves Container-->
+    <div id="waveheight">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+    
+</div>
+<!--Header ends-->
+    
     </main>
     <!-- javascript files -->
     <!-- external JS file -->
-<script src="js/javascript.js"></script>
+    <script src="js/javascript.js"></script>
+    <script>
+        indexView();
+        screenSmall();
+    </script>
 </body>
 </html>
