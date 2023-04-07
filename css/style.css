@@ -1,16 +1,21 @@
 @font-face {
     font-family: "Ubuntu Mono";
     src: url("../fonts/Arimo Regular Nerd Font Complete.ttf");
+    src: url("../fonts/Arimo Regular Nerd Font Complete.ttf");
 }
 
 :root{
     --dark-color: black;
     --svg-color-menu: black;
     --Pale-Turquoise: #91c8ff;
+    --Pale-Turquoise: #91c8ff;
     --Snow: #fafafa;
     --background-color-pages: #f2f6ff;
     --skill-color-name: #5c6170;
     --gray-shadow: #ccc;
+    --cyan-blue: #86b7fe;
+    --Cerulean:#2268ee;
+    --blue-green:#19A7CE;
     --cyan-blue: #86b7fe;
     --Cerulean:#2268ee;
     --blue-green:#19A7CE;
@@ -25,6 +30,7 @@ body{
     margin-right: 0px;
     margin-left: 0px;
     margin-bottom: 0px;
+    font-size: 14pt;
     font-size: 14pt;
 }
 
@@ -64,6 +70,7 @@ a{
     border-width: 1px;
     padding: 15px;
     margin: 5px;
+    font-size: 12pt;
     font-size: 12pt;
     background-color:var(--Snow);
 }
@@ -135,6 +142,7 @@ a > .menu-style:hover > svg{
 }
 
 .aling-div-left{
+    display: inline-block; 
     display: inline-block; 
 }
 
@@ -261,6 +269,7 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
 .bg-text{
     position: absolute;
     top: 0;
+    top: 0;
     left: 50%;
     transition: all .4s ease-in-out;
     z-index: -1;
@@ -268,6 +277,7 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
     font-weight: 800;
     font-size: 6.3rem;
     color: var(--Pale-Turquoise);
+    width: max-content;
     width: max-content;
 }
 
@@ -357,6 +367,11 @@ background: linear-gradient(223deg, rgba(192,222,255,1) 0%, rgba(34,104,238,1) 1
 /* skill position and color */
 .skills{
     position: absolute;
+    top: 289px;
+    color: var(--dark-color);
+    padding-left: 10px;
+    padding-right: 10px;
+    backdrop-filter: blur(8px);
     top: 289px;
     color: var(--dark-color);
     padding-left: 10px;
@@ -555,6 +570,7 @@ footer{
 
 .svg-footer:hover{
     color: var(--blue-gree);
+    color: var(--blue-gree);
 }
 
 /*****************************************************
@@ -668,6 +684,10 @@ footer{
         height: 94vh;
     }
 
+    .inner-header{
+        height: 94vh;
+    }
+
     /* about view */
 
     .img-right-margin{
@@ -708,9 +728,11 @@ footer{
 
     .main-title > h1 {
         font-size: 2.5rem;
+        font-size: 2.5rem;
     }
 
     .bg-text {
+        font-size: 3.2rem;
         font-size: 3.2rem;
     }
 
@@ -721,6 +743,12 @@ footer{
     .img-card{
         width: 100%;
         height: 100%;
+        filter: opacity(30%);
+    }
+
+    .card-name{
+        padding-left: 10px;
+        padding-right: 10px;
         filter: opacity(30%);
     }
 
@@ -743,11 +771,41 @@ footer{
 
     .external-link{
         top:357px;
+        top:357px;
     }
 
     .img-left-content {
         position: 0px;
         left:0px;
+    }
+
+    /* contact */
+
+    .margin-width-text{
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .aling-flex-content{
+        display: grid;
+    }
+
+    .form{
+        padding-right: 0; 
+        width: 100%; 
+    }
+
+    .personal-info{
+        padding-left: 0; 
+        width: 100%; 
+    }
+
+    #form-contact{
+        order:2;
+    }
+
+    #personal-info-social{
+        order: 1;
     }
 
     /* contact */
@@ -893,6 +951,7 @@ footer{
         width: 100%;
         height: 100%;
         filter: opacity(30%);
+        filter: opacity(30%);
     }
 
     .description{
@@ -908,6 +967,7 @@ footer{
     }
 
     .external-link{
+        top:366px;
         top:366px;
     }
 
@@ -939,7 +999,33 @@ footer{
     #form-contact{
         order:2;
     }
+    /* contact  */
+    .margin-width-text{
+        width: 95%;
+        margin-left: 10px;
+    }
 
+    .aling-flex-content{
+        display: grid;
+    }
+
+    .form{
+        padding-right: 0; 
+        width: 100%; 
+    }
+
+    .personal-info{
+        padding-left: 0; 
+        width: 100%; 
+    }
+
+    #form-contact{
+        order:2;
+    }
+
+    #personal-info-social{
+        order: 1;
+    }
     #personal-info-social{
         order: 1;
     }
