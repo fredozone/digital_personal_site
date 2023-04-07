@@ -18,3 +18,30 @@ const form = document.querySelector("#form");
        }
        )
    })
+  //  function to hidde menu with the screen is small 
+   function screenSmall(){
+      var sectionPhoneView = document.getElementById("phone-view");
+      if (screen.width <= 1040) {
+        sectionPhoneView.setAttribute("style", "display: none");
+      }
+    }
+
+    //show and hide action 
+    function menuAction() {
+      var x = document.getElementById("phone-view");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    // index wave efect
+    function indexView(){
+      var withScreen = window.innerHeight;
+      var indexMain = document.getElementById("index");
+      var waveHeight = document.getElementById('waveheight').clientHeight;
+      var cal = withScreen - waveHeight;
+      indexMain.setAttribute("style", "height:" + cal + "px");
+
+    }
