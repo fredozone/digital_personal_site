@@ -557,6 +557,48 @@ footer{
     color: var(--blue-gree);
 }
 
+.logo-link-style{
+    display: grid;
+    justify-items: center;
+}
+
+.logo-imagen{
+    margin: 5px;
+    width: 80px;
+}
+
+.logo-name, .logo-lastname{
+    margin-top: 0px;
+    font-size: 1.7rem;
+}
+
+.logo-name{
+    margin-bottom: 0px;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+#style-hr{
+    height: 1px;
+    background-color: var(--Snow);
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer-link-menu{
+    margin: 5px;
+}
+
+.footer-link-menu:hover{
+    text-decoration: underline;
+}
+
+.hide-phone{
+    display: block;
+}
+
 /*****************************************************
                     LAPTOP
 *****************************************************/
@@ -565,7 +607,7 @@ footer{
 @media (min-width: 1040px) and (max-width: 1536px) {
 
     .img-index{
-        width: 80%;
+        width: 318px;
     }
 
     .card{
@@ -778,6 +820,22 @@ footer{
     #personal-info-social{
         order: 1;
     }
+
+    /* footer */
+    .hide-phone{
+        display: none;
+    }
+
+    #order-footer-link-menu{
+        order: 2;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #footer-get-in-touch{
+        order: 1;
+    }
 }
 
 /********************************************************
@@ -943,8 +1001,36 @@ footer{
     #personal-info-social{
         order: 1;
     }
-<<<<<<< HEAD
 }
-=======
+
+/****************************************************************
+                        TABLET LANDSCAPE
+****************************************************************/
+@media (min-width: 927px) and (max-width: 1024px) and (orientation: landscape) {
+    .img-index{
+        width: 314px;
+    }
+    
 }
->>>>>>> main
+
+/****************************************************************
+                        PHONE LANDSCAPE
+****************************************************************/
+
+@media (min-width: 320px) and (max-width: 926px) and (orientation: landscape) {
+    .img-index{
+        width: 196px;
+    }
+
+    .menu-alignt-right{
+        display: flex;
+        justify-content: flex-start;
+        left: 6px;
+        top: 6px;
+        position: absolute;
+    }
+
+    .style-name{
+        font-size: 2rem;
+    }
+} 

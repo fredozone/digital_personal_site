@@ -38,10 +38,14 @@ const form = document.querySelector("#form");
 
     // index wave efect
     function indexView(){
-      var withScreen = window.innerHeight;
-      var indexMain = document.getElementById("index");
-      var waveHeight = document.getElementById('waveheight').clientHeight;
-      var cal = withScreen - waveHeight;
-      indexMain.setAttribute("style", "height:" + cal + "px");
-
+        var heightScreen = window.innerHeight;
+        var withScreen = window.innerWidth;
+        var indexMain = document.getElementById("index");
+        var waveHeight = document.getElementById('waveheight').clientHeight;
+        if ((heightScreen > withScreen) || (screen.width > 1025 && screen.height <= 1080 )) {
+          var cal = heightScreen - waveHeight;
+        }else if(withScreen > heightScreen){
+          var cal = heightScreen;
+        }
+        indexMain.setAttribute("style", "height:" + cal + "px");
     }
