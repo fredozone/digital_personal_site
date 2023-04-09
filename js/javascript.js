@@ -41,11 +41,24 @@ const form = document.querySelector("#form");
         var heightScreen = window.innerHeight;
         var withScreen = window.innerWidth;
         var indexMain = document.getElementById("index");
-        var waveHeight = document.getElementById('waveheight').clientHeight;
+        // var waveHeight = document.getElementById('waveheight').clientHeight;
         if ((heightScreen > withScreen) || (screen.width > 1025 && screen.height <= 1080 )) {
-          var cal = heightScreen - waveHeight;
+          // var cal = heightScreen - waveHeight;
+          var cal = heightScreen;
         }else if(withScreen > heightScreen){
           var cal = heightScreen;
         }
         indexMain.setAttribute("style", "height:" + cal + "px");
     }
+
+    /* function to change the color of the big blob 1 */
+    function chbg(color, typeElemnt) {
+      if(typeElemnt == "img"){
+        document.getElementById('blob-big-1').style.fill = color;
+        document.getElementById('blob-big-1').style.transition = "all .4s ease-in-out";
+      }else if(typeElemnt == "p"){
+        document.getElementById('blob-big-2').style.fill = color;
+        document.getElementById('blob-big-2').style.transition = "all .4s ease-in-out";
+      }
+    }
+  
