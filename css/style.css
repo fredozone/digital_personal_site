@@ -37,6 +37,7 @@ body{
 .background-color-index{
     background-color: var(--index-background);
     margin-top: 0;
+    overflow: hidden;
 }
 
 a{
@@ -201,8 +202,33 @@ h1{
 
 .bloz-3{
     z-index: 88;
-    width: 200px;
+    width: 400px;
     fill: #1d328b;
+    transform: rotate(50deg);
+}
+
+.bloz-3-down{
+    width: 300px;
+}
+
+.bloz-style-3-1{
+    z-index: 89 ;
+    right: 260px;
+    top: 76%;
+    position: absolute;
+    display: block;
+}
+
+.bloz-3-down-1{
+    width: 320px;
+}
+
+#bloz-3-1{
+    fill: none;
+    width: 100px;
+    stroke: #1d328b;
+    stroke-width: 2px;
+    stroke-linejoin: initial;
 }
 
 #bloz-single-right{
@@ -211,61 +237,98 @@ h1{
 
 .bloz-4{
     z-index: 88;
-    width: 120px;
+    width: 203px;
+    right: -113px;
+    top: -37px;
+    position: absolute;
+    transform: rotate(26deg);
     fill: #bed7ff;
 }
 
 .bloz-style-1{
-    right: 293px;
-    top: 47px;
+    right: 199px;
+    top: -47px;
     position: absolute;
     display: block;
 }
 
 .bloz-style-2{
-    top: 20%;
-    left: 20px;
+    top: -20%;
+    left: -95px;
     position: absolute;
     display: block;
 }
 
 .bloz-5{
     z-index: 88;
-    width: 150px;
+    width: 400px;
     fill: #1b41da;
 }
 
+.bloz-style-2-1{
+    top: -20%;
+    left: -95px;
+    position: absolute;
+    display: block;
+}
+
+.bloz-5-1{
+    z-index: 88;
+    width: 420px;
+    fill: #1b41da;
+}
+
+#bloz-5-1{
+    fill: none;
+    width: 100px;
+    stroke: #5e9bfc;
+    stroke-width: 2px;
+    stroke-linejoin: initial;
+}
+
+
 .bloz-style-3{
-    right: 400px;
-    top: 50%;
+    right: 245px;
+    top: 78%;
     position: absolute;
     display: block;
 }
 
 .bloz-style-4{
-    top: 65%;
-    left: 20px;
+    top: 81%;
+    left: -33px;
     position: absolute;
     display: block;
 }
 
+.bloz-6-1{
+    z-index: 88;
+    width: 141px;
+    fill: #bed7ff;
+}
+
 .bloz-6{
-    width: 197px;
+    width: 487px;
 }
 
 #bloz-4-3{
     position: absolute;
-    top: 90px;
-    left: 124px;
-    fill: #bed7ff;
+    top: 128px;
+    left: 350px;
+    fill: #1b41da;
 }
 
 #bloz-4-2{
-    fill: #1b41da;
+    fill: #bed7ff;
+    top: -87px;
+    width: 300px;
+    left: -108px;
+    transform: rotate(145deg);
 }
 
 #bloz-4-1{
     fill: #1d328b;
+    left: -16px;
 }
 
 #bloz-7{
@@ -675,17 +738,35 @@ footer{
     }
 
     .bloz-style-1 {
-        right: 222px;
-        top: 15px;
+        right: 164px;
+        top: -29px;
+    }
+
+    .bloz-style-2 {
+        top: -23%;
+        left: -200px;
     }
 
     .bloz-style-3 {
-        right: 216px;
-        top: 65%;
+        right: 149px;
+        top: 78%;
+    }
+
+    .bloz-style-4 {
+        top: 80%;
+        left: -42px;
+    }
+
+    #bloz-4-3{
+        top: 93px;
     }
 
     .display-laptop-blob{
         display: none;
+    }
+
+    .bloz-5 {
+        width: 400px;
     }
 
     .card{
@@ -799,7 +880,7 @@ footer{
         margin-left: 80px;
     }
 
-    .bloz-style-1, .bloz-style-2, .bloz-style-3, .bloz-style-4, .bloz-style-5, .bloz-style-6{
+    .bloz-style-1, .bloz-style-2, .bloz-style-2-1, .bloz-style-3, .bloz-style-4, .bloz-style-6, .bloz-style-3-1{
         display: none;
     }
 
@@ -1000,7 +1081,7 @@ footer{
     }
 
     /* index */
-    .bloz-style-1, .bloz-style-2, .bloz-style-3, .bloz-style-4, .bloz-style-5, .bloz-style-6{
+    .bloz-style-1, .bloz-style-2, .bloz-style-2-1, .bloz-style-3, .bloz-style-4, .bloz-style-6, .bloz-style-3-1{
         display: none;
     }
     /* about view */
