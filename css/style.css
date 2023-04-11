@@ -20,6 +20,13 @@
     --Cerulean:#2268ee;
     --blue-green:#19A7CE;
     --index-background:#eff5ff;
+    --footer-background: #395ecc;
+
+    /* index style blob */
+    --Lapis-blue: #1d328b;
+    --cornflower-blue: #5e9bfc;
+    --tropical-blue: #bed7ff;
+    --Palatinate-blue: #1b41da;
 }
 
 body{
@@ -32,6 +39,7 @@ body{
     margin-left: 0px;
     margin-bottom: 0px;
     font-size: 14pt;
+
 }
 
 .background-color-index{
@@ -148,6 +156,7 @@ a > .menu-style:hover > svg{
 
 .img-index{
     width: 100%;
+    margin-right: 36px;;
     z-index: 99;
 }
 
@@ -203,7 +212,7 @@ h1{
 .bloz-3{
     z-index: 88;
     width: 400px;
-    fill: #1d328b;
+    fill: var(--Lapis-blue);
     transform: rotate(50deg);
 }
 
@@ -226,13 +235,13 @@ h1{
 #bloz-3-1{
     fill: none;
     width: 100px;
-    stroke: #1d328b;
+    stroke: var(--Lapis-blue);
     stroke-width: 2px;
     stroke-linejoin: initial;
 }
 
 #bloz-single-right{
-    fill: #5e9bfc;
+    fill: var(--cornflower-blue);
 }
 
 .bloz-4{
@@ -242,7 +251,7 @@ h1{
     top: -37px;
     position: absolute;
     transform: rotate(26deg);
-    fill: #bed7ff;
+    fill: var(--tropical-blue);
 }
 
 .bloz-style-1{
@@ -262,7 +271,7 @@ h1{
 .bloz-5{
     z-index: 88;
     width: 400px;
-    fill: #1b41da;
+    fill: var(--Palatinate-blue);
 }
 
 .bloz-style-2-1{
@@ -275,13 +284,13 @@ h1{
 .bloz-5-1{
     z-index: 88;
     width: 420px;
-    fill: #1b41da;
+    fill: var(--Palatinate-blue);
 }
 
 #bloz-5-1{
     fill: none;
     width: 100px;
-    stroke: #5e9bfc;
+    stroke: var(--cornflower-blue);
     stroke-width: 2px;
     stroke-linejoin: initial;
 }
@@ -304,7 +313,7 @@ h1{
 .bloz-6-1{
     z-index: 88;
     width: 141px;
-    fill: #bed7ff;
+    fill: var(--tropical-blue);
 }
 
 .bloz-6{
@@ -315,11 +324,11 @@ h1{
     position: absolute;
     top: 128px;
     left: 350px;
-    fill: #1b41da;
+    fill: var(--Palatinate-blue);
 }
 
 #bloz-4-2{
-    fill: #bed7ff;
+    fill: var(--tropical-blue);
     top: -87px;
     width: 300px;
     left: -108px;
@@ -327,14 +336,14 @@ h1{
 }
 
 #bloz-4-1{
-    fill: #1d328b;
+    fill: var(--Lapis-blue);
     left: -16px;
 }
 
 #bloz-7{
     fill: none;
     width: 100px;
-    stroke: #1d328b;
+    stroke: var(--Lapis-blue);
     stroke-width: 5px;
     stroke-linejoin: initial;
 }
@@ -368,8 +377,7 @@ h1{
 ******************************************************************/
 .background-color-pages{
     background-color: var(--background-color-pages);
-    /* background: linear-gradient(180deg, var(--Pale-Turquoise) 60%, var(--Snow) 60%);
-    background-repeat: repeat-x; */
+    overflow: hidden;
 }
 
 /* change my h1 without change the tag h1 */
@@ -666,16 +674,17 @@ input[type="text"]:focus,input[type="email"]:focus, textarea:focus{
 **********************************************************/
 
 footer{
-    background-color: var(--Pale-Turquoise);
+    background-color: var(--footer-background);
     margin-top: 25px;
-    padding-right: 10px;
-    padding-left: 10px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: var(--Snow);
 }
 
 .svg-footer{
-    
+    color: var(--Snow);
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -687,17 +696,32 @@ footer{
 .logo-link-style{
     display: grid;
     justify-items: center;
+    margin-top: 22px;
+    grid-template-columns: 120px 200px;
 }
 
 .logo-imagen{
     margin: 5px;
-    width: 80px;
+    width: 100px;
 }
 
-.logo-name, .logo-lastname{
+.logo-name{
     margin-top: 0px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    color: var(--Snow);
     font-family: 'logoname', sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 0px;
+    grid-template-columns: 100% 100%;
+}
+
+.logo-name > span{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: contents;
+    font-size: 1rem;
 }
 
 .logo-name{
@@ -712,12 +736,34 @@ footer{
     margin: 5px;
 }
 
+.footer-link-menu> a{
+    color: var(--Snow);
+}
+
 .footer-link-menu:hover{
     text-decoration: underline;
 }
 
 .hide-phone{
     display: block;
+}
+
+.title-footer{
+    font-size: 1.3rem;
+    font-family: inherit;
+    margin-bottom: 11px;
+    margin-left: 5px;
+}
+
+.icon-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: var(--cornflower-blue);
+    height: 50px;
+    align-items: center;
 }
 
 /*****************************************************
@@ -729,7 +775,8 @@ footer{
 
     /*inde*/
     .img-index{
-        width: 318px;
+        width: 100%; 
+        margin-right: 36px;
     }
 
     .bloz-1 > svg {
@@ -1010,6 +1057,14 @@ footer{
     #footer-get-in-touch{
         order: 1;
     }
+
+    .logo-imagen{
+        width: 85px;
+    }
+
+    .logo-link-style{
+        grid-template-columns: 100px 200px;
+    }
 }
 
 /********************************************************
@@ -1083,6 +1138,10 @@ footer{
     /* index */
     .bloz-style-1, .bloz-style-2, .bloz-style-2-1, .bloz-style-3, .bloz-style-4, .bloz-style-6, .bloz-style-3-1{
         display: none;
+    }
+
+    .img-index {
+        margin-right: 9px;
     }
     /* about view */
 
@@ -1179,6 +1238,22 @@ footer{
     #personal-info-social{
         order: 1;
     }
+
+    .logo-link-style{
+        grid-template-columns: 150px 237px;
+    }
+
+    .logo-name{
+        font-size: 1.5rem;
+    }
+
+    .logo-name > span{
+        font-size: 1.3rem;
+    }
+
+    .personal-info{
+        justify-content: start;
+    }
 }
 
 /****************************************************************
@@ -1186,7 +1261,8 @@ footer{
 ****************************************************************/
 @media (min-width: 927px) and (max-width: 1024px) and (orientation: landscape) {
     .img-index{
-        width: 314px;
+        width: 100%; 
+        margin-right: 36px;
     }
     
 }
@@ -1198,6 +1274,7 @@ footer{
 @media (min-width: 320px) and (max-width: 926px) and (orientation: landscape) {
     .img-index{
         width: 196px;
+        margin-right: 5px;
     }
 
     .menu-alignt-right{
