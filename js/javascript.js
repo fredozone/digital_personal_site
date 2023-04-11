@@ -54,6 +54,8 @@ const form = document.querySelector("#form");
     /* function to change the color of the big blob 1 */
     function chbg(color, typeElemnt) {
       if(typeElemnt == "img"){
+        // document.getElementById('img-index-id').src = "../images/icon.png";
+        // document.getElementById('img-index-id').style.transition = "all .4s ease-in-out";
         document.getElementById('blob-big-1').style.fill = color;
         document.getElementById('blob-big-1').style.transition = "all .4s ease-in-out";
       }else if(typeElemnt == "p"){
